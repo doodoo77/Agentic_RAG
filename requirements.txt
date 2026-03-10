@@ -14,3 +14,4 @@ pymupdf
 tqdm
 streamlit==1.41.1
 protobuf==3.20.3
+qdrant-client==1.16.0
