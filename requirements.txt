@@ -12,4 +12,5 @@ openpyxl
 python-pptx
 pymupdf
 tqdm
-streamlit
+streamlit==1.41.1
+protobuf==3.20.3
