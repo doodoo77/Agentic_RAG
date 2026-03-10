@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Accessibility Diagnosis Agentic RAG
 
 > Search past diagnosis history, reuse validated fixes, and continuously improve with project-level memory.
@@ -362,4 +361,3 @@ python -m rag_system.main
 - 실제 초기 진단 모델은 `InitialDiagnosisGenerator`에서 교체
 - 실제 이미지/텍스트 임베딩 모델은 `EncoderFactory`에서 교체
 - 실제 벡터DB는 현재 JSONL + numpy 기반 예제로 되어 있으며 FAISS/Qdrant/pgvector 등으로 쉽게 교체 가능
->>>>>>> c7f25cd7175f6b9837f6fc7d4067adf531d27a1c
