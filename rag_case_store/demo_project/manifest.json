@@ -1,0 +1,13 @@
+{
+  "project_id": "demo_project",
+  "input_dir": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history",
+  "preprocess_outputs": [
+    "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/records.jsonl",
+    "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/records.jsonl"
+  ],
+  "cases_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/cases.json",
+  "vector_store_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/vector_store.json",
+  "source_file_count": 2,
+  "case_count": 52,
+  "vector_row_count": 52
+}

@@ -1,0 +1,15 @@
+openai
+mem0ai
+langgraph
+langchain-core
+transformers
+sentence-transformers
+torch
+pillow
+pydantic
+pandas
+openpyxl
+python-pptx
+pymupdf
+tqdm
+streamlit

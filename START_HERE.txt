@@ -1,0 +1,9 @@
+1. 이 폴더를 /content/drive/MyDrive/ 아래에 둡니다.
+2. past_diagnosis_history/ 에 과거진단이력 .pptx 또는 .pdf 파일을 넣습니다.
+3. example_input/ 에 현재 입력 이미지와 초기 진단 메모 텍스트(.txt 또는 .md)를 넣습니다.
+4. main_pipeline.ipynb 를 실행합니다.
+
+example_input 사용 규칙:
+- 이미지 1개 이상 필요
+- 초기 진단 메모 텍스트 1개 이상 필요
+- 노트북은 첫 번째 이미지와 첫 번째 텍스트 파일을 사용합니다.

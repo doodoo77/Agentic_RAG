@@ -1,0 +1,834 @@
+[
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_008/img_000_4396e1246e09ad0c.png",
+    "retrieved_result": {
+      "error_type": "부적절한 대체 텍스트",
+      "check_item": "로고 대체 텍스트",
+      "improvement_text": "움직이는 이미지(gif) 등 시각적 효과만을 위한 이미지에는 대체 텍스트를 주지 않음",
+      "improvement_code": "<a href=\"/ko/\" class=\"header-logo\"><span class=\"hidden\">1974-2024 한국표준협회 50주년, KSD 한국표준협회</span></a>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 8,
+      "error_code_text": "<img>,<input type=\"image\"> 등 이미지 요소에 alt 속성에 적절한 대체텍스트를 제공함. alt속성에 불필요하거나 중복된 alt 텍스트를 제공하지 않음",
+      "source_text": "check_item: 로고 대체 텍스트 | error_type: 부적절한 대체 텍스트 | rationale: 움직이는 이미지(gif) 등 시각적 효과만을 위한 이미지에는 대체 텍스트를 주지 않음 | fix_code: <a href=\"/ko/\" class=\"header-logo\"><span class=\"hidden\">1974-2024 한국표준협회 50주년, KSD 한국표준협회</span></a> | error_code_text: <img>,<input type=\"image\"> 등 이미지 요소에 alt 속성에 적절한 대체텍스트를 제공함. alt속성에 불필요하거나 중복된 alt 텍스트를 제공하지 않음"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_008/img_001_d72fc8b602c69e4a.png",
+    "retrieved_result": {
+      "error_type": "부적절한 대체 텍스트",
+      "check_item": "로고 대체 텍스트",
+      "improvement_text": "움직이는 이미지(gif) 등 시각적 효과만을 위한 이미지에는 대체 텍스트를 주지 않음",
+      "improvement_code": "<a href=\"/ko/\" class=\"header-logo\"><span class=\"hidden\">1974-2024 한국표준협회 50주년, KSD 한국표준협회</span></a>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 8,
+      "error_code_text": "<img>,<input type=\"image\"> 등 이미지 요소에 alt 속성에 적절한 대체텍스트를 제공함. alt속성에 불필요하거나 중복된 alt 텍스트를 제공하지 않음",
+      "source_text": "check_item: 로고 대체 텍스트 | error_type: 부적절한 대체 텍스트 | rationale: 움직이는 이미지(gif) 등 시각적 효과만을 위한 이미지에는 대체 텍스트를 주지 않음 | fix_code: <a href=\"/ko/\" class=\"header-logo\"><span class=\"hidden\">1974-2024 한국표준협회 50주년, KSD 한국표준협회</span></a> | error_code_text: <img>,<input type=\"image\"> 등 이미지 요소에 alt 속성에 적절한 대체텍스트를 제공함. alt속성에 불필요하거나 중복된 alt 텍스트를 제공하지 않음"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_009/img_000_36d352ec039d0fe5.png",
+    "retrieved_result": {
+      "error_type": "title 속성 오류",
+      "check_item": "홈페이지 메뉴 버튼",
+      "improvement_text": "화면 읽기 프로그램에서 메뉴 버튼에 대한 title 속성의 내용이 부적절함\n화면 읽기 프로그램에서 메뉴 버튼에 대한 title 속성의 내용이 부적절함",
+      "improvement_code": "<button title=\"메인메뉴\" type=\"button\" class=\"ant-btn menu-btn\" ant-click-animating-without-extra-node=\"false\">\n  <span class=\"hidden\">메인메뉴</span>\n</button>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 9,
+      "error_code_text": "<button title=\"메뉴열기\" type=\"button\" class=\"ant-btn menu-btn\" ant-click-animating-without-extra-node=\"false\">\n  <span class=\"hidden\">메뉴열기</span>\n</button>",
+      "source_text": "check_item: 홈페이지 메뉴 버튼 | error_type: title 속성 오류 | rationale: 화면 읽기 프로그램에서 메뉴 버튼에 대한 title 속성의 내용이 부적절함\n화면 읽기 프로그램에서 메뉴 버튼에 대한 title 속성의 내용이 부적절함 | fix_code: <button title=\"메인메뉴\" type=\"button\" class=\"ant-btn menu-btn\" ant-click-animating-without-extra-node=\"false\">\n  <span class=\"hidden\">메인메뉴</span>\n</button> | error_code_text: <button title=\"메뉴열기\" type=\"button\" class=\"ant-btn menu-btn\" ant-click-animating-without-extra-node=\"false\">\n  <span class=\"hidden\">메뉴열기</span>\n</button>"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_010/img_000_a9199e8ebcc7ec07.png",
+    "retrieved_result": {
+      "error_type": "포커스 표시 미흡",
+      "check_item": "포커스 표시 스타일",
+      "improvement_text": "포커스가 있는 요소에 overflow:hidden 속성이 적용되어 포커스 표시가 잘리지 않도록 해야 함\noutline-offset 속성값을 -1px ~ -2px 범위로 설정하여 포커스 표시가 요소 내부에 잘리지 않도록 해야 함",
+      "improvement_code": ""
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 10,
+      "error_code_text": "",
+      "source_text": "check_item: 포커스 표시 스타일 | error_type: 포커스 표시 미흡 | rationale: 포커스가 있는 요소에 overflow:hidden 속성이 적용되어 포커스 표시가 잘리지 않도록 해야 함\noutline-offset 속성값을 -1px ~ -2px 범위로 설정하여 포커스 표시가 요소 내부에 잘리지 않도록 해야 함 | fix_code:  | error_code_text: "
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_010/img_001_d5b1ab55fba05c60.png",
+    "retrieved_result": {
+      "error_type": "포커스 표시 미흡",
+      "check_item": "포커스 표시 스타일",
+      "improvement_text": "포커스가 있는 요소에 overflow:hidden 속성이 적용되어 포커스 표시가 잘리지 않도록 해야 함\noutline-offset 속성값을 -1px ~ -2px 범위로 설정하여 포커스 표시가 요소 내부에 잘리지 않도록 해야 함",
+      "improvement_code": ""
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 10,
+      "error_code_text": "",
+      "source_text": "check_item: 포커스 표시 스타일 | error_type: 포커스 표시 미흡 | rationale: 포커스가 있는 요소에 overflow:hidden 속성이 적용되어 포커스 표시가 잘리지 않도록 해야 함\noutline-offset 속성값을 -1px ~ -2px 범위로 설정하여 포커스 표시가 요소 내부에 잘리지 않도록 해야 함 | fix_code:  | error_code_text: "
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_012/img_000_fcf245a2a6c7bd73.png",
+    "retrieved_result": {
+      "error_type": "링크 텍스트 중복",
+      "check_item": "링크 텍스트 중복",
+      "improvement_text": "링크텍스트가 중복되면 사용자가 링크의 목적을 정확히 알기 어려워 접근성에 문제를 일으킴\n스크린 리더 사용 시 중복된 링크 텍스트는 혼란을 초래할 수 있음",
+      "improvement_code": "<a class=\"m-category-menu-item\" href=\"/ko/e-service/ta-service\">e 서비스 홈</a>\n<a class=\"m-category-menu-item\" href=\"/ko/e-service/ta-service\" title=\"e 서비스 홈 상세\">e 서비스 홈</a>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 12,
+      "error_code_text": "19. ( 링크 텍스트 중복 ) 동일 링크텍스트가 중복되어 사용자가 링크의 목적을 알기 어려움.",
+      "source_text": "check_item: 링크 텍스트 중복 | error_type: 링크 텍스트 중복 | rationale: 링크텍스트가 중복되면 사용자가 링크의 목적을 정확히 알기 어려워 접근성에 문제를 일으킴\n스크린 리더 사용 시 중복된 링크 텍스트는 혼란을 초래할 수 있음 | fix_code: <a class=\"m-category-menu-item\" href=\"/ko/e-service/ta-service\">e 서비스 홈</a>\n<a class=\"m-category-menu-item\" href=\"/ko/e-service/ta-service\" title=\"e 서비스 홈 상세\">e 서비스 홈</a> | error_code_text: 19. ( 링크 텍스트 중복 ) 동일 링크텍스트가 중복되어 사용자가 링크의 목적을 알기 어려움."
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_013/img_000_fcf245a2a6c7bd73.png",
+    "retrieved_result": {
+      "error_type": "26. ( 링크의 목적이 명확 하지 않은 ) 링크에는 목적을 알 수 있는 텍스트 ( 링크 텍스트, 링크의 title 속성 등 ) 가 포함되어야 함",
+      "check_item": "링크 title 속성 미설정",
+      "improvement_text": "링크 요소에 title 속성이 없거나 목적이 불명확한 경우 스크린 리더 사용자가 링크의 목적을 이해하기 어려움",
+      "improvement_code": "<a href=\"/en\" target=\"_blank\" class=\"lang-btn\" title=\"영문 새 창 열림\">English</a>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 13,
+      "error_code_text": "<a href=\"/en\" target=\"_blank\" class=\"lang-btn\">English</a>",
+      "source_text": "check_item: 링크 title 속성 미설정 | error_type: 26. ( 링크의 목적이 명확 하지 않은 ) 링크에는 목적을 알 수 있는 텍스트 ( 링크 텍스트, 링크의 title 속성 등 ) 가 포함되어야 함 | rationale: 링크 요소에 title 속성이 없거나 목적이 불명확한 경우 스크린 리더 사용자가 링크의 목적을 이해하기 어려움 | fix_code: <a href=\"/en\" target=\"_blank\" class=\"lang-btn\" title=\"영문 새 창 열림\">English</a> | error_code_text: <a href=\"/en\" target=\"_blank\" class=\"lang-btn\">English</a>"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_014/img_000_7974d2577f577e52.png",
+    "retrieved_result": {
+      "error_type": "11. ( 링크 텍스트의 명확성 ) 링크텍스트 만으로 목적을 파악하기 어려운 경우, 링크텍스트에 목적을 더 명확히 표현",
+      "check_item": "홈페이지 메인화면",
+      "improvement_text": "링크 텍스트만으로 목적을 파악하기 어려움, 스크린 리더를 사용하는 경우 불편함 발생\n링크의 목적을 보다 명확히 알 수 있도록 텍스트를 보완하는 것\n링크 텍스트에 title 속성을 추가하여 목적을 명확히 표현 (' 홈 화면 ' ) 할 필요가 있음",
+      "improvement_code": "<a href=\"/ko/\" title=\"홈 화면\">\n  <div class=\"left\">\n    <h2><span>한국증권예탁결제원</span> 홈페이지 메인화면 .</h2>\n  </div>\n</a>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 14,
+      "error_code_text": "-",
+      "source_text": "check_item: 홈페이지 메인화면 | error_type: 11. ( 링크 텍스트의 명확성 ) 링크텍스트 만으로 목적을 파악하기 어려운 경우, 링크텍스트에 목적을 더 명확히 표현 | rationale: 링크 텍스트만으로 목적을 파악하기 어려움, 스크린 리더를 사용하는 경우 불편함 발생\n링크의 목적을 보다 명확히 알 수 있도록 텍스트를 보완하는 것\n링크 텍스트에 title 속성을 추가하여 목적을 명확히 표현 (' 홈 화면 ' ) 할 필요가 있음 | fix_code: <a href=\"/ko/\" title=\"홈 화면\">\n  <div class=\"left\">\n    <h2><span>한국증권예탁결제원</span> 홈페이지 메인화면 .</h2>\n  </div>\n</a> | error_code_text: -"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_015/img_000_ea7f38bb00b86493.png",
+    "retrieved_result": {
+      "error_type": "alt 속성 미설정",
+      "check_item": "퀵메뉴 이미지 대체텍스트",
+      "improvement_text": "퀵메뉴 이미지에 alt 속성이 없으면 스크린리더가 내용을 인식하지 못해 접근성에 문제를 일으킴\n적절한 alt 텍스트를 제공하여 이미지의 의미를 전달해야 함",
+      "improvement_code": "<button class=\"quick-menu-button \" title=\"퀵메뉴 열기\"><img class=\"quick-menu-icon\" src=\"/ko/images/main/quick-menu-big.svg\" alt=\"퀵메뉴 열기\"></button>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 15,
+      "error_code_text": "<button class=\"quick-menu-button \" title=\"퀵메뉴 닫기\"><img class=\"quick-menu-icon\" src=\"/ko/images/main/quick-menu-big.svg\" alt=\"퀵메뉴 닫기\"></button>",
+      "source_text": "check_item: 퀵메뉴 이미지 대체텍스트 | error_type: alt 속성 미설정 | rationale: 퀵메뉴 이미지에 alt 속성이 없으면 스크린리더가 내용을 인식하지 못해 접근성에 문제를 일으킴\n적절한 alt 텍스트를 제공하여 이미지의 의미를 전달해야 함 | fix_code: <button class=\"quick-menu-button \" title=\"퀵메뉴 열기\"><img class=\"quick-menu-icon\" src=\"/ko/images/main/quick-menu-big.svg\" alt=\"퀵메뉴 열기\"></button> | error_code_text: <button class=\"quick-menu-button \" title=\"퀵메뉴 닫기\"><img class=\"quick-menu-icon\" src=\"/ko/images/main/quick-menu-big.svg\" alt=\"퀵메뉴 닫기\"></button>"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_016/img_000_3e9d1ac31eb267c8.png",
+    "retrieved_result": {
+      "error_type": "alt 속성 오류",
+      "check_item": "브로슈어 다운로드",
+      "improvement_text": "이미지에 적절하지 않은 alt 텍스트가 포함되어 있어 스크린 리더 사용자에게 혼란을 줄 수 있음",
+      "improvement_code": "alt=\"브로슈어 다운로드 아이콘\""
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 16,
+      "error_code_text": "alt 속성에 적절한 대체 텍스트를 제공해야 함",
+      "source_text": "check_item: 브로슈어 다운로드 | error_type: alt 속성 오류 | rationale: 이미지에 적절하지 않은 alt 텍스트가 포함되어 있어 스크린 리더 사용자에게 혼란을 줄 수 있음 | fix_code: alt=\"브로슈어 다운로드 아이콘\" | error_code_text: alt 속성에 적절한 대체 텍스트를 제공해야 함"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_017/img_000_fe608e5b1d1e60f1.png",
+    "retrieved_result": {
+      "error_type": "11. ( 탭키 포커스 순서 ) 탭키포커스 이동 순서가 논리적이지 않거나, 포커스이동이 불가능 한 경우 .",
+      "check_item": "접근성 진단 보고서",
+      "improvement_text": "탭키를 이용한 포커스 이동시 논리적 순서대로 포커스가 이동하지 않음 .\n탭키 포커스 이동순서가 논리적이지 않거나 포커스 이동이 불가능한 경우 접근성에 문제 발생 가능 .",
+      "improvement_code": "<div class=\"menu-list-item-inner\" tabindex=\"0\">\n  <img class=\"menu-icon\" src=\"/ko/images/main/icon_tel.svg\" alt=\"대표전화 아이콘 \">\n  <span class=\"menu-title\">대표전화 안내</span>\n</div>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 17,
+      "error_code_text": "■ 오류 예시  ■ 수정 예시",
+      "source_text": "check_item: 접근성 진단 보고서 | error_type: 11. ( 탭키 포커스 순서 ) 탭키포커스 이동 순서가 논리적이지 않거나, 포커스이동이 불가능 한 경우 . | rationale: 탭키를 이용한 포커스 이동시 논리적 순서대로 포커스가 이동하지 않음 .\n탭키 포커스 이동순서가 논리적이지 않거나 포커스 이동이 불가능한 경우 접근성에 문제 발생 가능 . | fix_code: <div class=\"menu-list-item-inner\" tabindex=\"0\">\n  <img class=\"menu-icon\" src=\"/ko/images/main/icon_tel.svg\" alt=\"대표전화 아이콘 \">\n  <span class=\"menu-title\">대표전화 안내</span>\n</div> | error_code_text: ■ 오류 예시  ■ 수정 예시"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_018/img_000_cda7c44cd284995f.png",
+    "retrieved_result": {
+      "error_type": "19. ( 버튼에 이름 없음 ) 버튼 요소에는 접근성 이름이 반드시 있어야 하며 스크린 리더에서 읽혀야 한다.",
+      "check_item": "접근성 진단 상세",
+      "improvement_text": "버튼에는 접근성 이름이 있어야 하며, 이는 스크린 리더 사용자에게 버튼의 목적을 명확히 전달하기 위함이다.",
+      "improvement_code": "<button class=\"main-swiper-btn main-swiper-prev-btn\" aria-label=\"이전\"></button>\n<button class=\"main-swiper-btn main-swiper-next-btn\" aria-label=\"다음\"></button>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 18,
+      "error_code_text": "<button class=\"main-swiper-btn main-swiper-prev-btn\"></button>\n<button class=\"main-swiper-btn main-swiper-next-btn\"></button>",
+      "source_text": "check_item: 접근성 진단 상세 | error_type: 19. ( 버튼에 이름 없음 ) 버튼 요소에는 접근성 이름이 반드시 있어야 하며 스크린 리더에서 읽혀야 한다. | rationale: 버튼에는 접근성 이름이 있어야 하며, 이는 스크린 리더 사용자에게 버튼의 목적을 명확히 전달하기 위함이다. | fix_code: <button class=\"main-swiper-btn main-swiper-prev-btn\" aria-label=\"이전\"></button>\n<button class=\"main-swiper-btn main-swiper-next-btn\" aria-label=\"다음\"></button> | error_code_text: <button class=\"main-swiper-btn main-swiper-prev-btn\"></button>\n<button class=\"main-swiper-btn main-swiper-next-btn\"></button>"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_018/img_001_ea7f38bb00b86493.png",
+    "retrieved_result": {
+      "error_type": "19. ( 버튼에 이름 없음 ) 버튼 요소에는 접근성 이름이 반드시 있어야 하며 스크린 리더에서 읽혀야 한다.",
+      "check_item": "접근성 진단 상세",
+      "improvement_text": "버튼에는 접근성 이름이 있어야 하며, 이는 스크린 리더 사용자에게 버튼의 목적을 명확히 전달하기 위함이다.",
+      "improvement_code": "<button class=\"main-swiper-btn main-swiper-prev-btn\" aria-label=\"이전\"></button>\n<button class=\"main-swiper-btn main-swiper-next-btn\" aria-label=\"다음\"></button>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 18,
+      "error_code_text": "<button class=\"main-swiper-btn main-swiper-prev-btn\"></button>\n<button class=\"main-swiper-btn main-swiper-next-btn\"></button>",
+      "source_text": "check_item: 접근성 진단 상세 | error_type: 19. ( 버튼에 이름 없음 ) 버튼 요소에는 접근성 이름이 반드시 있어야 하며 스크린 리더에서 읽혀야 한다. | rationale: 버튼에는 접근성 이름이 있어야 하며, 이는 스크린 리더 사용자에게 버튼의 목적을 명확히 전달하기 위함이다. | fix_code: <button class=\"main-swiper-btn main-swiper-prev-btn\" aria-label=\"이전\"></button>\n<button class=\"main-swiper-btn main-swiper-next-btn\" aria-label=\"다음\"></button> | error_code_text: <button class=\"main-swiper-btn main-swiper-prev-btn\"></button>\n<button class=\"main-swiper-btn main-swiper-next-btn\"></button>"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_018/img_002_d5d476f3c29b4b97.png",
+    "retrieved_result": {
+      "error_type": "19. ( 버튼에 이름 없음 ) 버튼 요소에는 접근성 이름이 반드시 있어야 하며 스크린 리더에서 읽혀야 한다.",
+      "check_item": "접근성 진단 상세",
+      "improvement_text": "버튼에는 접근성 이름이 있어야 하며, 이는 스크린 리더 사용자에게 버튼의 목적을 명확히 전달하기 위함이다.",
+      "improvement_code": "<button class=\"main-swiper-btn main-swiper-prev-btn\" aria-label=\"이전\"></button>\n<button class=\"main-swiper-btn main-swiper-next-btn\" aria-label=\"다음\"></button>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 18,
+      "error_code_text": "<button class=\"main-swiper-btn main-swiper-prev-btn\"></button>\n<button class=\"main-swiper-btn main-swiper-next-btn\"></button>",
+      "source_text": "check_item: 접근성 진단 상세 | error_type: 19. ( 버튼에 이름 없음 ) 버튼 요소에는 접근성 이름이 반드시 있어야 하며 스크린 리더에서 읽혀야 한다. | rationale: 버튼에는 접근성 이름이 있어야 하며, 이는 스크린 리더 사용자에게 버튼의 목적을 명확히 전달하기 위함이다. | fix_code: <button class=\"main-swiper-btn main-swiper-prev-btn\" aria-label=\"이전\"></button>\n<button class=\"main-swiper-btn main-swiper-next-btn\" aria-label=\"다음\"></button> | error_code_text: <button class=\"main-swiper-btn main-swiper-prev-btn\"></button>\n<button class=\"main-swiper-btn main-swiper-next-btn\"></button>"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_018/img_003_5cb7b89983a62df0.png",
+    "retrieved_result": {
+      "error_type": "19. ( 버튼에 이름 없음 ) 버튼 요소에는 접근성 이름이 반드시 있어야 하며 스크린 리더에서 읽혀야 한다.",
+      "check_item": "접근성 진단 상세",
+      "improvement_text": "버튼에는 접근성 이름이 있어야 하며, 이는 스크린 리더 사용자에게 버튼의 목적을 명확히 전달하기 위함이다.",
+      "improvement_code": "<button class=\"main-swiper-btn main-swiper-prev-btn\" aria-label=\"이전\"></button>\n<button class=\"main-swiper-btn main-swiper-next-btn\" aria-label=\"다음\"></button>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 18,
+      "error_code_text": "<button class=\"main-swiper-btn main-swiper-prev-btn\"></button>\n<button class=\"main-swiper-btn main-swiper-next-btn\"></button>",
+      "source_text": "check_item: 접근성 진단 상세 | error_type: 19. ( 버튼에 이름 없음 ) 버튼 요소에는 접근성 이름이 반드시 있어야 하며 스크린 리더에서 읽혀야 한다. | rationale: 버튼에는 접근성 이름이 있어야 하며, 이는 스크린 리더 사용자에게 버튼의 목적을 명확히 전달하기 위함이다. | fix_code: <button class=\"main-swiper-btn main-swiper-prev-btn\" aria-label=\"이전\"></button>\n<button class=\"main-swiper-btn main-swiper-next-btn\" aria-label=\"다음\"></button> | error_code_text: <button class=\"main-swiper-btn main-swiper-prev-btn\"></button>\n<button class=\"main-swiper-btn main-swiper-next-btn\"></button>"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_019/img_000_dce3dd462442943b.png",
+    "retrieved_result": {
+      "error_type": "대체 텍스트 오류",
+      "check_item": "자동 재생 컨트롤 버튼",
+      "improvement_text": "자동 재생이 있는 콘텐츠는 사용자가 제어할 수 있어야 하며, 그렇지 않으면 접근성 문제가 발생할 수 있음\n대체 텍스트는 이미지의 기능을 명확히 설명해야 함 ('일시 정지' 등)",
+      "improvement_code": "<button class=\"main-swiper-auto-play-wrapper-btn\">\n  <img src=\"/ko/images/main/icon-pause.svg\" alt=\"일시 정지 / 자동재생 중지\">\n</button>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 19,
+      "error_code_text": "<button class=\"main-swiper-auto-play-wrapper-btn\">\n  <img src=\"/ko/images/main/icon-pause.svg\" alt=\"일시 정지\">\n</button>\n\n<button class=\"main-swiper-auto-play-wrapper-btn\">\n  <img src=\"/ko/images/main/icon-play.svg\" alt=\"재생\">\n</button>",
+      "source_text": "check_item: 자동 재생 컨트롤 버튼 | error_type: 대체 텍스트 오류 | rationale: 자동 재생이 있는 콘텐츠는 사용자가 제어할 수 있어야 하며, 그렇지 않으면 접근성 문제가 발생할 수 있음\n대체 텍스트는 이미지의 기능을 명확히 설명해야 함 ('일시 정지' 등) | fix_code: <button class=\"main-swiper-auto-play-wrapper-btn\">\n  <img src=\"/ko/images/main/icon-pause.svg\" alt=\"일시 정지 / 자동재생 중지\">\n</button> | error_code_text: <button class=\"main-swiper-auto-play-wrapper-btn\">\n  <img src=\"/ko/images/main/icon-pause.svg\" alt=\"일시 정지\">\n</button>\n\n<button class=\"main-swiper-auto-play-wrapper-btn\">\n  <img src=\"/ko/images/main/icon-play.svg\" alt=\"재생\">\n</button>"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_020/img_000_2d5cce1073048f4f.png",
+    "retrieved_result": {
+      "error_type": "aria-hidden 속성 부적절 사용",
+      "check_item": "메인 마퀴 텍스트",
+      "improvement_text": "화면 읽기 프로그램이 읽을 콘텐츠를 aria-hidden=\"true\" 속성으로 숨겨 사용자에게 정보를 제공하지 못하는 문제 발생",
+      "improvement_code": "aria-hidden=\"true\" 속성을 제거하여 화면 읽기 프로그램이 텍스트를 인식하도록 수정"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 20,
+      "error_code_text": "<div class=\"main-marquee-wrapper\">\n  <div class=\"marquee\"><span class=\"eng-128-m-130 marquee-content main-marquee-text\">The Value Creator Leading the Financial Market with Trust and Innovation</span>...</div>",
+      "source_text": "check_item: 메인 마퀴 텍스트 | error_type: aria-hidden 속성 부적절 사용 | rationale: 화면 읽기 프로그램이 읽을 콘텐츠를 aria-hidden=\"true\" 속성으로 숨겨 사용자에게 정보를 제공하지 못하는 문제 발생 | fix_code: aria-hidden=\"true\" 속성을 제거하여 화면 읽기 프로그램이 텍스트를 인식하도록 수정 | error_code_text: <div class=\"main-marquee-wrapper\">\n  <div class=\"marquee\"><span class=\"eng-128-m-130 marquee-content main-marquee-text\">The Value Creator Leading the Financial Market with Trust and Innovation</span>...</div>"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_021/img_000_aed12efe0ffc8ad9.png",
+    "retrieved_result": {
+      "error_type": "포커스 표시 없음",
+      "check_item": "뉴스 탭 메뉴 버튼",
+      "improvement_text": "키보드로 포커스 이동 시 현재 선택된 메뉴가 시각적으로 구분되지 않음\n포커스 표시가 없어 사용자가 현재 위치를 알기 어려움",
+      "improvement_code": "포커스 상태에 대한 시각적 스타일 추가 (예: outline, border 등)"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 21,
+      "error_code_text": "<button class=\"ksd-news-tab body-20-r-150 active body-20-b-150\">뉴스탭</button>\n<button class=\"ksd-news-tab body-20-r-150 \">공지사항</button>\n<button class=\"ksd-news-tab body-20-r-150 \">채용정보</button>",
+      "source_text": "check_item: 뉴스 탭 메뉴 버튼 | error_type: 포커스 표시 없음 | rationale: 키보드로 포커스 이동 시 현재 선택된 메뉴가 시각적으로 구분되지 않음\n포커스 표시가 없어 사용자가 현재 위치를 알기 어려움 | fix_code: 포커스 상태에 대한 시각적 스타일 추가 (예: outline, border 등) | error_code_text: <button class=\"ksd-news-tab body-20-r-150 active body-20-b-150\">뉴스탭</button>\n<button class=\"ksd-news-tab body-20-r-150 \">공지사항</button>\n<button class=\"ksd-news-tab body-20-r-150 \">채용정보</button>"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_023/img_000_d0f3f344a5d71eaf.png",
+    "retrieved_result": {
+      "error_type": "부적절한 대체 텍스트",
+      "check_item": "대체 텍스트 적절성",
+      "improvement_text": "대체텍스트는 이미지의 의미를 정확하게 전달해야 함",
+      "improvement_code": "<img class=\"family-site-card-logo\" src=\"/ko/images/main/logo-card-k-evote.svg\" alt=\"K-evote\">"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 23,
+      "error_code_text": "<img>,<input type=\"image\"> 등 이미지 요소에 alt 속성이 없거나 부적절한 alt 속성은 스크린 리더에서 이미지의 의미를 정확히 전달하지 못함",
+      "source_text": "check_item: 대체 텍스트 적절성 | error_type: 부적절한 대체 텍스트 | rationale: 대체텍스트는 이미지의 의미를 정확하게 전달해야 함 | fix_code: <img class=\"family-site-card-logo\" src=\"/ko/images/main/logo-card-k-evote.svg\" alt=\"K-evote\"> | error_code_text: <img>,<input type=\"image\"> 등 이미지 요소에 alt 속성이 없거나 부적절한 alt 속성은 스크린 리더에서 이미지의 의미를 정확히 전달하지 못함"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_024/img_000_746077e4e3198274.png",
+    "retrieved_result": {
+      "error_type": "대체 텍스트 미제공",
+      "check_item": "대체 텍스트 제공 여부",
+      "improvement_text": "이미지에 적절한 대체 텍스트가 제공되어야 함",
+      "improvement_code": "<img src=\"/ko/images/main/logo-ksd-sb.svg\" alt=\"KSD 한국증권금융\">"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 24,
+      "error_code_text": "<img src=\"/ko/images/main/logo-ksd-sb.svg\" alt=\"KSD 한국증권금융\">",
+      "source_text": "check_item: 대체 텍스트 제공 여부 | error_type: 대체 텍스트 미제공 | rationale: 이미지에 적절한 대체 텍스트가 제공되어야 함 | fix_code: <img src=\"/ko/images/main/logo-ksd-sb.svg\" alt=\"KSD 한국증권금융\"> | error_code_text: <img src=\"/ko/images/main/logo-ksd-sb.svg\" alt=\"KSD 한국증권금융\">"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_025/img_000_6cd5c0d7915ba474.png",
+    "retrieved_result": {
+      "error_type": "대체 텍스트 미제공",
+      "check_item": "대체 텍스트 미제공",
+      "improvement_text": "이미지에 적절한 대체 텍스트가 제공되지 않아 스크린리더 사용자가 이미지 내용을 이해할 수 없음",
+      "improvement_code": "<img src=\"...\" alt=\"유튜브 로고\">"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 25,
+      "error_code_text": "alt 속성에 적절한 설명을 포함해야 함",
+      "source_text": "check_item: 대체 텍스트 미제공 | error_type: 대체 텍스트 미제공 | rationale: 이미지에 적절한 대체 텍스트가 제공되지 않아 스크린리더 사용자가 이미지 내용을 이해할 수 없음 | fix_code: <img src=\"...\" alt=\"유튜브 로고\"> | error_code_text: alt 속성에 적절한 설명을 포함해야 함"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_026/img_000_39beb0c58f81516c.png",
+    "retrieved_result": {
+      "error_type": "11. ( 포커스 표시 없음 ) 포커스가 있는 요소에 시각적으로 구분되는 표시가 없음, 포커스표시가 화면에 보이지 않음 .",
+      "check_item": "포커스 표시 스타일",
+      "improvement_text": "포커스 표시가 없어 키보드 사용자가 현재 위치를 인지하기 어려움\n포커스 outline-offset 값이 3px 이상 설정되어 포커스 표시가 화면에서 벗어나 보일 수 있음",
+      "improvement_code": ""
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 26,
+      "error_code_text": "",
+      "source_text": "check_item: 포커스 표시 스타일 | error_type: 11. ( 포커스 표시 없음 ) 포커스가 있는 요소에 시각적으로 구분되는 표시가 없음, 포커스표시가 화면에 보이지 않음 . | rationale: 포커스 표시가 없어 키보드 사용자가 현재 위치를 인지하기 어려움\n포커스 outline-offset 값이 3px 이상 설정되어 포커스 표시가 화면에서 벗어나 보일 수 있음 | fix_code:  | error_code_text: "
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_026/img_001_933a33af3f43fdbd.png",
+    "retrieved_result": {
+      "error_type": "11. ( 포커스 표시 없음 ) 포커스가 있는 요소에 시각적으로 구분되는 표시가 없음, 포커스표시가 화면에 보이지 않음 .",
+      "check_item": "포커스 표시 스타일",
+      "improvement_text": "포커스 표시가 없어 키보드 사용자가 현재 위치를 인지하기 어려움\n포커스 outline-offset 값이 3px 이상 설정되어 포커스 표시가 화면에서 벗어나 보일 수 있음",
+      "improvement_code": ""
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 26,
+      "error_code_text": "",
+      "source_text": "check_item: 포커스 표시 스타일 | error_type: 11. ( 포커스 표시 없음 ) 포커스가 있는 요소에 시각적으로 구분되는 표시가 없음, 포커스표시가 화면에 보이지 않음 . | rationale: 포커스 표시가 없어 키보드 사용자가 현재 위치를 인지하기 어려움\n포커스 outline-offset 값이 3px 이상 설정되어 포커스 표시가 화면에서 벗어나 보일 수 있음 | fix_code:  | error_code_text: "
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_028/img_000_bcbbe53575fbb200.png",
+    "retrieved_result": {
+      "error_type": "11. ( 링크 중복된 경우 ) 동일한 링크 텍스트가 반복적으로 존재하여 혼동을 주는 경우 .",
+      "check_item": "링크 중복된 경우",
+      "improvement_text": "<a> 동일한 링크 텍스트가 반복적으로 존재 하여 혼동을 줄 수 있음\n<a> 링크된 내용이 텍스트로 제공되지 , 숨겨진 img 등으로만 있을 경우 인식하지 못 함\n화면에 보이지않도록 숨겨진 링크가 cloned 된 상태로 tabindex=\"-1\" 처리되어 반복적으로 있음",
+      "improvement_code": ""
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 28,
+      "error_code_text": "",
+      "source_text": "check_item: 링크 중복된 경우 | error_type: 11. ( 링크 중복된 경우 ) 동일한 링크 텍스트가 반복적으로 존재하여 혼동을 주는 경우 . | rationale: <a> 동일한 링크 텍스트가 반복적으로 존재 하여 혼동을 줄 수 있음\n<a> 링크된 내용이 텍스트로 제공되지 , 숨겨진 img 등으로만 있을 경우 인식하지 못 함\n화면에 보이지않도록 숨겨진 링크가 cloned 된 상태로 tabindex=\"-1\" 처리되어 반복적으로 있음 | fix_code:  | error_code_text: "
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_029/img_000_b0913fdf9b03a2d3.png",
+    "retrieved_result": {
+      "error_type": "대체 텍스트 누락",
+      "check_item": "이미지 대체 텍스트 누락",
+      "improvement_text": "이미지에 적절한 대체 텍스트가 제공되어야 함",
+      "improvement_code": "<img src=\"/ko/images/main/logo_footer.svg\" alt=\"한국증권금융 로고\">"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 29,
+      "error_code_text": "<img src=\"/ko/images/main/logo_footer.svg\" alt=\"\">",
+      "source_text": "check_item: 이미지 대체 텍스트 누락 | error_type: 대체 텍스트 누락 | rationale: 이미지에 적절한 대체 텍스트가 제공되어야 함 | fix_code: <img src=\"/ko/images/main/logo_footer.svg\" alt=\"한국증권금융 로고\"> | error_code_text: <img src=\"/ko/images/main/logo_footer.svg\" alt=\"\">"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_030/img_000_b0e9707741c0b482.png",
+    "retrieved_result": {
+      "error_type": "오류",
+      "check_item": "링크 title 속성 미설정",
+      "improvement_text": "링크텍스트와 동일한 텍스트를 갖는 title 속성은 불필요한 중복으로 오히려 방해가 됨\n링크의 목적 전달에 혼란을 줄 수 있음",
+      "improvement_code": "<a href=\"/ko/service-center/privacy/privacy-policy\">\n  <span class=\"strong\">개인정보처리방침</span>\n</a>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 30,
+      "error_code_text": "<a href=\"/ko/service-center/privacy/privacy-policy\" title=\"개인정보처리방침\" rel=\"noopener noreferrer\">\n  <span class=\"strong\">개인정보처리방침</span>\n</a>",
+      "source_text": "check_item: 링크 title 속성 미설정 | error_type: 오류 | rationale: 링크텍스트와 동일한 텍스트를 갖는 title 속성은 불필요한 중복으로 오히려 방해가 됨\n링크의 목적 전달에 혼란을 줄 수 있음 | fix_code: <a href=\"/ko/service-center/privacy/privacy-policy\">\n  <span class=\"strong\">개인정보처리방침</span>\n</a> | error_code_text: <a href=\"/ko/service-center/privacy/privacy-policy\" title=\"개인정보처리방침\" rel=\"noopener noreferrer\">\n  <span class=\"strong\">개인정보처리방침</span>\n</a>"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_031/img_000_b0e9707741c0b482.png",
+    "retrieved_result": {
+      "error_type": "부적절한 대체 텍스트",
+      "check_item": "이미지 대체 텍스트",
+      "improvement_text": "이미지 대체 텍스트는 이미지의 의미를 정확하게 전달할 수 있어야 한다.",
+      "improvement_code": "<img class=\"icon\" src=\"/ko/images/main/icon_arrow_c1c1c1.svg\" alt=\"화살표 아이콘\">\n...\n<a class=\"sns-link-item\" href=\"http://www.ksdpr.or.kr/\" target=\"_blank\" title=\"한국 증권 데이터\" rel=\"noopener noreferrer\">\n  <img src=\"/ko/images/main/icon_sns_webzine.svg\" alt=\"웹진 아이콘\">\n</a>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 31,
+      "error_code_text": "alt 속성에 부적절한 텍스트가 포함되어 있음",
+      "source_text": "check_item: 이미지 대체 텍스트 | error_type: 부적절한 대체 텍스트 | rationale: 이미지 대체 텍스트는 이미지의 의미를 정확하게 전달할 수 있어야 한다. | fix_code: <img class=\"icon\" src=\"/ko/images/main/icon_arrow_c1c1c1.svg\" alt=\"화살표 아이콘\">\n...\n<a class=\"sns-link-item\" href=\"http://www.ksdpr.or.kr/\" target=\"_blank\" title=\"한국 증권 데이터\" rel=\"noopener noreferrer\">\n  <img src=\"/ko/images/main/icon_sns_webzine.svg\" alt=\"웹진 아이콘\">\n</a> | error_code_text: alt 속성에 부적절한 텍스트가 포함되어 있음"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_032/img_000_a2a21f4191974b51.png",
+    "retrieved_result": {
+      "error_type": "오류",
+      "check_item": "링크에 title 속성 누락",
+      "improvement_text": "링크텍스트와 동일한 내용을 title 속성에 중복으로 제공할 경우 중복 안내가 되어 비효율적임\n링크의 목적을 정확하게 설명할 수 있는 내용을 title 속성에 제공함",
+      "improvement_code": "<a href=\"http://www.seibro.or.kr\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"신용정보 조회\">신용정보조회</a>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 32,
+      "error_code_text": "<a href=\"http://www.seibro.or.kr\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"신용정보 조회\">신용정보조회</a>",
+      "source_text": "check_item: 링크에 title 속성 누락 | error_type: 오류 | rationale: 링크텍스트와 동일한 내용을 title 속성에 중복으로 제공할 경우 중복 안내가 되어 비효율적임\n링크의 목적을 정확하게 설명할 수 있는 내용을 title 속성에 제공함 | fix_code: <a href=\"http://www.seibro.or.kr\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"신용정보 조회\">신용정보조회</a> | error_code_text: <a href=\"http://www.seibro.or.kr\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"신용정보 조회\">신용정보조회</a>"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis1/extracted_images/pptx/slide_032/img_001_dbb3a1c27a4ce99d.png",
+    "retrieved_result": {
+      "error_type": "오류",
+      "check_item": "링크에 title 속성 누락",
+      "improvement_text": "링크텍스트와 동일한 내용을 title 속성에 중복으로 제공할 경우 중복 안내가 되어 비효율적임\n링크의 목적을 정확하게 설명할 수 있는 내용을 title 속성에 제공함",
+      "improvement_code": "<a href=\"http://www.seibro.or.kr\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"신용정보 조회\">신용정보조회</a>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis1.pptx",
+      "page_index": 32,
+      "error_code_text": "<a href=\"http://www.seibro.or.kr\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"신용정보 조회\">신용정보조회</a>",
+      "source_text": "check_item: 링크에 title 속성 누락 | error_type: 오류 | rationale: 링크텍스트와 동일한 내용을 title 속성에 중복으로 제공할 경우 중복 안내가 되어 비효율적임\n링크의 목적을 정확하게 설명할 수 있는 내용을 title 속성에 제공함 | fix_code: <a href=\"http://www.seibro.or.kr\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"신용정보 조회\">신용정보조회</a> | error_code_text: <a href=\"http://www.seibro.or.kr\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"신용정보 조회\">신용정보조회</a>"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_008/img_000_b21f2d963ed378f8.png",
+    "retrieved_result": {
+      "error_type": "명도 대비 미달",
+      "check_item": "입력 > 플레이스홀더",
+      "improvement_text": "플레이스홀더 배경색(#BFBFBF)과 글자색(#FFFFFF) 간 명도대비가 1.1 : 1 로 매우 낮아 시각장애인 식별이 어려움\n플레이스홀더 텍스트 색상지정이 적절히 이루어지지 않음",
+      "improvement_code": "/* CSS */\ninput::placeholder { color: #8f8f8f; }"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 8,
+      "error_code_text": "#BFBFBF #FFFFFF 1.1 : 1",
+      "source_text": "check_item: 입력 > 플레이스홀더 | error_type: 명도 대비 미달 | rationale: 플레이스홀더 배경색(#BFBFBF)과 글자색(#FFFFFF) 간 명도대비가 1.1 : 1 로 매우 낮아 시각장애인 식별이 어려움\n플레이스홀더 텍스트 색상지정이 적절히 이루어지지 않음 | fix_code: /* CSS */\ninput::placeholder { color: #8f8f8f; } | error_code_text: #BFBFBF #FFFFFF 1.1 : 1"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_009/img_000_2da71d9e6c566316.png",
+    "retrieved_result": {
+      "error_type": "색상 대비 미흡",
+      "check_item": "색상 대비",
+      "improvement_text": "텍스트와 배경 간의 명도 대비가 충분하지 않아 시각적 인식이 어려움 (예: 글자 색상, 1px 두께의 밑줄 등)\n접근성 권고기준에 따른 최소 7:1 명도비를 충족하지 못함",
+      "improvement_code": "/* CSS */\n.ant-dropdown-menu-item-selected, .ant-dropdown-menu-item-selected>a, .ant-dropdown-menu-submenu-title-selected, .ant-dropdown-menu-submenu-title-selected>a {\n  color: #027cc2;\n  background-color: #e6faff;\n  text-decoration-line: underline;\n}"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 9,
+      "error_code_text": "1.4.1 (명도 대비 최소값 준수) 텍스트와 배경 간의 명도비가 충분히 높아야 함.",
+      "source_text": "check_item: 색상 대비 | error_type: 색상 대비 미흡 | rationale: 텍스트와 배경 간의 명도 대비가 충분하지 않아 시각적 인식이 어려움 (예: 글자 색상, 1px 두께의 밑줄 등)\n접근성 권고기준에 따른 최소 7:1 명도비를 충족하지 못함 | fix_code: /* CSS */\n.ant-dropdown-menu-item-selected, .ant-dropdown-menu-item-selected>a, .ant-dropdown-menu-submenu-title-selected, .ant-dropdown-menu-submenu-title-selected>a {\n  color: #027cc2;\n  background-color: #e6faff;\n  text-decoration-line: underline;\n} | error_code_text: 1.4.1 (명도 대비 최소값 준수) 텍스트와 배경 간의 명도비가 충분히 높아야 함."
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_009/img_001_dc7c2f78490d7e31.png",
+    "retrieved_result": {
+      "error_type": "색상 대비 미흡",
+      "check_item": "색상 대비",
+      "improvement_text": "텍스트와 배경 간의 명도 대비가 충분하지 않아 시각적 인식이 어려움 (예: 글자 색상, 1px 두께의 밑줄 등)\n접근성 권고기준에 따른 최소 7:1 명도비를 충족하지 못함",
+      "improvement_code": "/* CSS */\n.ant-dropdown-menu-item-selected, .ant-dropdown-menu-item-selected>a, .ant-dropdown-menu-submenu-title-selected, .ant-dropdown-menu-submenu-title-selected>a {\n  color: #027cc2;\n  background-color: #e6faff;\n  text-decoration-line: underline;\n}"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 9,
+      "error_code_text": "1.4.1 (명도 대비 최소값 준수) 텍스트와 배경 간의 명도비가 충분히 높아야 함.",
+      "source_text": "check_item: 색상 대비 | error_type: 색상 대비 미흡 | rationale: 텍스트와 배경 간의 명도 대비가 충분하지 않아 시각적 인식이 어려움 (예: 글자 색상, 1px 두께의 밑줄 등)\n접근성 권고기준에 따른 최소 7:1 명도비를 충족하지 못함 | fix_code: /* CSS */\n.ant-dropdown-menu-item-selected, .ant-dropdown-menu-item-selected>a, .ant-dropdown-menu-submenu-title-selected, .ant-dropdown-menu-submenu-title-selected>a {\n  color: #027cc2;\n  background-color: #e6faff;\n  text-decoration-line: underline;\n} | error_code_text: 1.4.1 (명도 대비 최소값 준수) 텍스트와 배경 간의 명도비가 충분히 높아야 함."
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_010/img_000_c1b3b5bfb459d76b.png",
+    "retrieved_result": {
+      "error_type": "title 속성 누락",
+      "check_item": "홈페이지 메뉴 - 메뉴 항목",
+      "improvement_text": "화면낭독기 사용자가 메뉴 항목을 정확히 인지할 수 있도록 title 속성으로 메뉴명을 제공해야 함\ntitle 속성은 메뉴 항목의 의미를 명확히 전달하여 접근성을 높임",
+      "improvement_code": "<ul>\n...\n<li class=\"ant-dropdown-menu-item ant-dropdown-menu-item-selected\">\n  <a href=\"...\" title=\"한국표준과학연구원 (KOFR)\">한국표준과학연구원 (KOFR)</a>\n</li>\n...\n</ul>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 10,
+      "error_code_text": "<ul>\n...\n<li class=\"ant-dropdown-menu-item ant-dropdown-menu-item-selected\">\n  <a href=\"...\">한국표준과학연구원 (KOFR)</a>\n</li>\n...\n</ul>",
+      "source_text": "check_item: 홈페이지 메뉴 - 메뉴 항목 | error_type: title 속성 누락 | rationale: 화면낭독기 사용자가 메뉴 항목을 정확히 인지할 수 있도록 title 속성으로 메뉴명을 제공해야 함\ntitle 속성은 메뉴 항목의 의미를 명확히 전달하여 접근성을 높임 | fix_code: <ul>\n...\n<li class=\"ant-dropdown-menu-item ant-dropdown-menu-item-selected\">\n  <a href=\"...\" title=\"한국표준과학연구원 (KOFR)\">한국표준과학연구원 (KOFR)</a>\n</li>\n...\n</ul> | error_code_text: <ul>\n...\n<li class=\"ant-dropdown-menu-item ant-dropdown-menu-item-selected\">\n  <a href=\"...\">한국표준과학연구원 (KOFR)</a>\n</li>\n...\n</ul>"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_011/img_000_0c9883613fc2b938.png",
+    "retrieved_result": {
+      "error_type": "빈 값",
+      "check_item": "대체텍스트",
+      "improvement_text": "IR 도구에서 이미지 대체텍스트(alt 텍스트)를 확인하였으나, 일부 이미지의 alt 텍스트가 빈 값으로 제공되고 있음\nalt 속성에는 이미지의 내용을 적절히 설명하는 텍스트가 포함되어야 함",
+      "improvement_code": "<img src=\"/ko/images/chart/02-01-01-03_diagram01.png\" class=\"chart\" alt=\"대체텍스트에 적절한 설명 입력\">"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 11,
+      "error_code_text": "<img src=\"/ko/images/chart/02-01-01-03_diagram01.png\" class=\"chart\" alt=\"\">",
+      "source_text": "check_item: 대체텍스트 | error_type: 빈 값 | rationale: IR 도구에서 이미지 대체텍스트(alt 텍스트)를 확인하였으나, 일부 이미지의 alt 텍스트가 빈 값으로 제공되고 있음\nalt 속성에는 이미지의 내용을 적절히 설명하는 텍스트가 포함되어야 함 | fix_code: <img src=\"/ko/images/chart/02-01-01-03_diagram01.png\" class=\"chart\" alt=\"대체텍스트에 적절한 설명 입력\"> | error_code_text: <img src=\"/ko/images/chart/02-01-01-03_diagram01.png\" class=\"chart\" alt=\"\">"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_011/img_001_45d264ba6920e032.png",
+    "retrieved_result": {
+      "error_type": "빈 값",
+      "check_item": "대체텍스트",
+      "improvement_text": "IR 도구에서 이미지 대체텍스트(alt 텍스트)를 확인하였으나, 일부 이미지의 alt 텍스트가 빈 값으로 제공되고 있음\nalt 속성에는 이미지의 내용을 적절히 설명하는 텍스트가 포함되어야 함",
+      "improvement_code": "<img src=\"/ko/images/chart/02-01-01-03_diagram01.png\" class=\"chart\" alt=\"대체텍스트에 적절한 설명 입력\">"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 11,
+      "error_code_text": "<img src=\"/ko/images/chart/02-01-01-03_diagram01.png\" class=\"chart\" alt=\"\">",
+      "source_text": "check_item: 대체텍스트 | error_type: 빈 값 | rationale: IR 도구에서 이미지 대체텍스트(alt 텍스트)를 확인하였으나, 일부 이미지의 alt 텍스트가 빈 값으로 제공되고 있음\nalt 속성에는 이미지의 내용을 적절히 설명하는 텍스트가 포함되어야 함 | fix_code: <img src=\"/ko/images/chart/02-01-01-03_diagram01.png\" class=\"chart\" alt=\"대체텍스트에 적절한 설명 입력\"> | error_code_text: <img src=\"/ko/images/chart/02-01-01-03_diagram01.png\" class=\"chart\" alt=\"\">"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_012/img_000_effd241e34c0ba7d.png",
+    "retrieved_result": {
+      "error_type": "경고 > 오류",
+      "check_item": "테이블 헤더 - scope 누락",
+      "improvement_text": "테이블 헤더 scope 속성은 화면리더가 테이블 헤더를 올바르게 인식할 수 있도록 돕는다.",
+      "improvement_code": "<thead class=\"ant-table-thead\">\n  <tr>\n    <th scope=\"col\" class=\"ant-table-expand-icon-th\" title=\"\" rowspan=\"1\">\n    </th>\n  ..."
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 12,
+      "error_code_text": "1.3.1 (정보 및 관계) 기준 위반으로 인한 오류.",
+      "source_text": "check_item: 테이블 헤더 - scope 누락 | error_type: 경고 > 오류 | rationale: 테이블 헤더 scope 속성은 화면리더가 테이블 헤더를 올바르게 인식할 수 있도록 돕는다. | fix_code: <thead class=\"ant-table-thead\">\n  <tr>\n    <th scope=\"col\" class=\"ant-table-expand-icon-th\" title=\"\" rowspan=\"1\">\n    </th>\n  ... | error_code_text: 1.3.1 (정보 및 관계) 기준 위반으로 인한 오류."
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_012/img_001_76ab2b041324299b.png",
+    "retrieved_result": {
+      "error_type": "경고 > 오류",
+      "check_item": "테이블 헤더 - scope 누락",
+      "improvement_text": "테이블 헤더 scope 속성은 화면리더가 테이블 헤더를 올바르게 인식할 수 있도록 돕는다.",
+      "improvement_code": "<thead class=\"ant-table-thead\">\n  <tr>\n    <th scope=\"col\" class=\"ant-table-expand-icon-th\" title=\"\" rowspan=\"1\">\n    </th>\n  ..."
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 12,
+      "error_code_text": "1.3.1 (정보 및 관계) 기준 위반으로 인한 오류.",
+      "source_text": "check_item: 테이블 헤더 - scope 누락 | error_type: 경고 > 오류 | rationale: 테이블 헤더 scope 속성은 화면리더가 테이블 헤더를 올바르게 인식할 수 있도록 돕는다. | fix_code: <thead class=\"ant-table-thead\">\n  <tr>\n    <th scope=\"col\" class=\"ant-table-expand-icon-th\" title=\"\" rowspan=\"1\">\n    </th>\n  ... | error_code_text: 1.3.1 (정보 및 관계) 기준 위반으로 인한 오류."
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_013/img_000_109ae5e21fe60476.png",
+    "retrieved_result": {
+      "error_type": "2.4.3 ( 링크 목적의 명확성 ) 링크의 목적을 알 수 없거나 목적이 불분명한 경우 적절한 대체 텍스트 제공 .",
+      "check_item": "경로 > 대표이사",
+      "improvement_text": "화면낭독기 사용자가 링크 목적을 명확히 알 수 있도록 링크 텍스트가 제공되어야 함\n링크의 목적이 명확하지 않은 경우 사용자가 혼란을 겪을 수 있음",
+      "improvement_code": "<ul class=\"ant-menu header-menu ant-menu-light ant-menu-root ant-menu-horizontal\">\n...\n<li class=\"ant-menu-item ant-menu-item-selected\">\n<a title=\"정보공개\" class=\"header-menu-link\" href=\"/ko/information-disclosure/information-disclosure-system/open-info-guide/open-info-overview\">정보공개</a>\n</li>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 13,
+      "error_code_text": "-",
+      "source_text": "check_item: 경로 > 대표이사 | error_type: 2.4.3 ( 링크 목적의 명확성 ) 링크의 목적을 알 수 없거나 목적이 불분명한 경우 적절한 대체 텍스트 제공 . | rationale: 화면낭독기 사용자가 링크 목적을 명확히 알 수 있도록 링크 텍스트가 제공되어야 함\n링크의 목적이 명확하지 않은 경우 사용자가 혼란을 겪을 수 있음 | fix_code: <ul class=\"ant-menu header-menu ant-menu-light ant-menu-root ant-menu-horizontal\">\n...\n<li class=\"ant-menu-item ant-menu-item-selected\">\n<a title=\"정보공개\" class=\"header-menu-link\" href=\"/ko/information-disclosure/information-disclosure-system/open-info-guide/open-info-overview\">정보공개</a>\n</li> | error_code_text: -"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_014/img_000_1a75806657462bf7.png",
+    "retrieved_result": {
+      "error_type": "대비 부족",
+      "check_item": "색상 대비 - 텍스트",
+      "improvement_text": "배경색과 글자색(#918BAC) 및 링크색(#5E558C) 간의 명도차가 2.1 : 1 로 WCAG 권장 대비 기준에 미달함\n대비가 낮아 시각장애인이나 색약자에게 정보 전달이 어려움\n접근성 향상을 위해 대비를 높여야 함",
+      "improvement_code": "배경색과 글자색 또는 링크색의 명도차를 WCAG 권장 기준인 최소 4.5 : 1 이상으로 조정"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 14,
+      "error_code_text": "대비 비율 2.1 : 1 미만",
+      "source_text": "check_item: 색상 대비 - 텍스트 | error_type: 대비 부족 | rationale: 배경색과 글자색(#918BAC) 및 링크색(#5E558C) 간의 명도차가 2.1 : 1 로 WCAG 권장 대비 기준에 미달함\n대비가 낮아 시각장애인이나 색약자에게 정보 전달이 어려움\n접근성 향상을 위해 대비를 높여야 함 | fix_code: 배경색과 글자색 또는 링크색의 명도차를 WCAG 권장 기준인 최소 4.5 : 1 이상으로 조정 | error_code_text: 대비 비율 2.1 : 1 미만"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_014/img_001_1d5a52c47a80f5b9.png",
+    "retrieved_result": {
+      "error_type": "대비 부족",
+      "check_item": "색상 대비 - 텍스트",
+      "improvement_text": "배경색과 글자색(#918BAC) 및 링크색(#5E558C) 간의 명도차가 2.1 : 1 로 WCAG 권장 대비 기준에 미달함\n대비가 낮아 시각장애인이나 색약자에게 정보 전달이 어려움\n접근성 향상을 위해 대비를 높여야 함",
+      "improvement_code": "배경색과 글자색 또는 링크색의 명도차를 WCAG 권장 기준인 최소 4.5 : 1 이상으로 조정"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 14,
+      "error_code_text": "대비 비율 2.1 : 1 미만",
+      "source_text": "check_item: 색상 대비 - 텍스트 | error_type: 대비 부족 | rationale: 배경색과 글자색(#918BAC) 및 링크색(#5E558C) 간의 명도차가 2.1 : 1 로 WCAG 권장 대비 기준에 미달함\n대비가 낮아 시각장애인이나 색약자에게 정보 전달이 어려움\n접근성 향상을 위해 대비를 높여야 함 | fix_code: 배경색과 글자색 또는 링크색의 명도차를 WCAG 권장 기준인 최소 4.5 : 1 이상으로 조정 | error_code_text: 대비 비율 2.1 : 1 미만"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_015/img_000_f6188272720d4863.png",
+    "retrieved_result": {
+      "error_type": "1.1.1 ( 비텍스트 콘텐츠 대체 ) 기준에 맞지않는 대체 텍스트 제공으로 인한 접근성 오류",
+      "check_item": "e 인증서 > 인증서 ( 개인용 ) 화면",
+      "improvement_text": "닫기 버튼에 적절한 대체텍스트 제공하지 않아 접근성 저해 가능성 있음\n닫기 버튼의 aria-label 속성값 ( 닫기 ) 와 화면에 보이는 텍스트가 일치하지 않아 혼동을 줄 수 있음",
+      "improvement_code": "<button type=\"button\" aria-label=\"닫기\" class=\"ant-modal-close\">\n  <span class=\"ant-modal-close-x\">\n    <div>\n      <span class=\"hidden\">닫기</span>\n    </div>\n  </span>\n</button>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 15,
+      "error_code_text": "-",
+      "source_text": "check_item: e 인증서 > 인증서 ( 개인용 ) 화면 | error_type: 1.1.1 ( 비텍스트 콘텐츠 대체 ) 기준에 맞지않는 대체 텍스트 제공으로 인한 접근성 오류 | rationale: 닫기 버튼에 적절한 대체텍스트 제공하지 않아 접근성 저해 가능성 있음\n닫기 버튼의 aria-label 속성값 ( 닫기 ) 와 화면에 보이는 텍스트가 일치하지 않아 혼동을 줄 수 있음 | fix_code: <button type=\"button\" aria-label=\"닫기\" class=\"ant-modal-close\">\n  <span class=\"ant-modal-close-x\">\n    <div>\n      <span class=\"hidden\">닫기</span>\n    </div>\n  </span>\n</button> | error_code_text: -"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_017/img_000_5d1223989fb1b48a.png",
+    "retrieved_result": {
+      "error_type": "2.4.3 ( 포커스 이동 순서 ) 링크에 마우스를 올렸을 때 title이 적절하지 않음",
+      "check_item": "개인정보처리방침 > 개인정보",
+      "improvement_text": "링크 요소에 마우스를 올렸을 때 title 속성에 적절한 설명이 포함되어야 함",
+      "improvement_code": "<a title=\"[ 개인정보 처리방침 바로 가기 ]\" href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보처리방침_바로가기.pdf\" rel=\"nofollow\" data-mce-href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보처리방침_바로가기.pdf\">"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 17,
+      "error_code_text": "<a title=\"개인정보 제 3 자 제공 동의 내용 보기 \" href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보제3자제공동의내용.pdf\" rel=\"nofollow\" data-mce-href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보제3자제공동의내용.pdf\">",
+      "source_text": "check_item: 개인정보처리방침 > 개인정보 | error_type: 2.4.3 ( 포커스 이동 순서 ) 링크에 마우스를 올렸을 때 title이 적절하지 않음 | rationale: 링크 요소에 마우스를 올렸을 때 title 속성에 적절한 설명이 포함되어야 함 | fix_code: <a title=\"[ 개인정보 처리방침 바로 가기 ]\" href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보처리방침_바로가기.pdf\" rel=\"nofollow\" data-mce-href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보처리방침_바로가기.pdf\"> | error_code_text: <a title=\"개인정보 제 3 자 제공 동의 내용 보기 \" href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보제3자제공동의내용.pdf\" rel=\"nofollow\" data-mce-href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보제3자제공동의내용.pdf\">"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_017/img_002_efe8f867a2e795d5.png",
+    "retrieved_result": {
+      "error_type": "2.4.3 ( 포커스 이동 순서 ) 링크에 마우스를 올렸을 때 title이 적절하지 않음",
+      "check_item": "개인정보처리방침 > 개인정보",
+      "improvement_text": "링크 요소에 마우스를 올렸을 때 title 속성에 적절한 설명이 포함되어야 함",
+      "improvement_code": "<a title=\"[ 개인정보 처리방침 바로 가기 ]\" href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보처리방침_바로가기.pdf\" rel=\"nofollow\" data-mce-href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보처리방침_바로가기.pdf\">"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 17,
+      "error_code_text": "<a title=\"개인정보 제 3 자 제공 동의 내용 보기 \" href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보제3자제공동의내용.pdf\" rel=\"nofollow\" data-mce-href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보제3자제공동의내용.pdf\">",
+      "source_text": "check_item: 개인정보처리방침 > 개인정보 | error_type: 2.4.3 ( 포커스 이동 순서 ) 링크에 마우스를 올렸을 때 title이 적절하지 않음 | rationale: 링크 요소에 마우스를 올렸을 때 title 속성에 적절한 설명이 포함되어야 함 | fix_code: <a title=\"[ 개인정보 처리방침 바로 가기 ]\" href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보처리방침_바로가기.pdf\" rel=\"nofollow\" data-mce-href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보처리방침_바로가기.pdf\"> | error_code_text: <a title=\"개인정보 제 3 자 제공 동의 내용 보기 \" href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보제3자제공동의내용.pdf\" rel=\"nofollow\" data-mce-href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보제3자제공동의내용.pdf\">"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_017/img_003_809c85862f8844d7.png",
+    "retrieved_result": {
+      "error_type": "2.4.3 ( 포커스 이동 순서 ) 링크에 마우스를 올렸을 때 title이 적절하지 않음",
+      "check_item": "개인정보처리방침 > 개인정보",
+      "improvement_text": "링크 요소에 마우스를 올렸을 때 title 속성에 적절한 설명이 포함되어야 함",
+      "improvement_code": "<a title=\"[ 개인정보 처리방침 바로 가기 ]\" href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보처리방침_바로가기.pdf\" rel=\"nofollow\" data-mce-href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보처리방침_바로가기.pdf\">"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 17,
+      "error_code_text": "<a title=\"개인정보 제 3 자 제공 동의 내용 보기 \" href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보제3자제공동의내용.pdf\" rel=\"nofollow\" data-mce-href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보제3자제공동의내용.pdf\">",
+      "source_text": "check_item: 개인정보처리방침 > 개인정보 | error_type: 2.4.3 ( 포커스 이동 순서 ) 링크에 마우스를 올렸을 때 title이 적절하지 않음 | rationale: 링크 요소에 마우스를 올렸을 때 title 속성에 적절한 설명이 포함되어야 함 | fix_code: <a title=\"[ 개인정보 처리방침 바로 가기 ]\" href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보처리방침_바로가기.pdf\" rel=\"nofollow\" data-mce-href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보처리방침_바로가기.pdf\"> | error_code_text: <a title=\"개인정보 제 3 자 제공 동의 내용 보기 \" href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보제3자제공동의내용.pdf\" rel=\"nofollow\" data-mce-href=\"https://www.ksd.or.kr/ko/api/download/static?fileNm=개인정보제3자제공동의내용.pdf\">"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_018/img_000_7578f418dc0ee39b.png",
+    "retrieved_result": {
+      "error_type": "2.4.3 ( 링크 목적의 명확성 ) 링크 목적을 알 수 있는 충분한 정보가 제공되지 않음 .",
+      "check_item": "정보이용 > 서비스소개 > 서비스설명",
+      "improvement_text": "링크 텍스트만으로는 링크목적을 파악하기에 title 속성을 제공하지 않아 목적을 알 수 없음",
+      "improvement_code": "<a title=\"링크 목적설명\" href=\"#downlad\" class=\"board-download\">2022_Repo_링크_목적_Fn.pdf</a>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 18,
+      "error_code_text": "<a title=\"링크 목적설명\" href=\"#downlad\" class=\"board-download\">2022_Repo_링크_목적_Fn.pdf</a>",
+      "source_text": "check_item: 정보이용 > 서비스소개 > 서비스설명 | error_type: 2.4.3 ( 링크 목적의 명확성 ) 링크 목적을 알 수 있는 충분한 정보가 제공되지 않음 . | rationale: 링크 텍스트만으로는 링크목적을 파악하기에 title 속성을 제공하지 않아 목적을 알 수 없음 | fix_code: <a title=\"링크 목적설명\" href=\"#downlad\" class=\"board-download\">2022_Repo_링크_목적_Fn.pdf</a> | error_code_text: <a title=\"링크 목적설명\" href=\"#downlad\" class=\"board-download\">2022_Repo_링크_목적_Fn.pdf</a>"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_019/img_000_15aedab991b9b5ac.png",
+    "retrieved_result": {
+      "error_type": "명도 대비 미달",
+      "check_item": "대비율 미달 - 색상 대비",
+      "improvement_text": "주황색 (#F6861F) 텍스트와 흰색 (#FFFFFF) 배경간의 명도 대비가 2.5:1로 기준 대비율인 4.5:1에 미치지 못함\n명도 대비가 낮아 시각장애인 등 접근성에 문제를 일으킬 수 있음",
+      "improvement_code": ""
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 19,
+      "error_code_text": "#F6861F : #FFFFFF 2.5 : 1",
+      "source_text": "check_item: 대비율 미달 - 색상 대비 | error_type: 명도 대비 미달 | rationale: 주황색 (#F6861F) 텍스트와 흰색 (#FFFFFF) 배경간의 명도 대비가 2.5:1로 기준 대비율인 4.5:1에 미치지 못함\n명도 대비가 낮아 시각장애인 등 접근성에 문제를 일으킬 수 있음 | fix_code:  | error_code_text: #F6861F : #FFFFFF 2.5 : 1"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_020/img_000_b58f18d2411f7609.png",
+    "retrieved_result": {
+      "error_type": "2.5.3 (운동장소 이동) 포커스 이동 시키는 방법으로 화면의 변화가 있을 때에는 포커스가 이동하는 위치가 예측 가능해야 한다.",
+      "check_item": "Q&A > 질문 및 답변 > 문의하기",
+      "improvement_text": "필수입력값 앞에 별표가 시각적으로만 구분되고 있어 스크린 리더 사용자에게는 구분되지 않음",
+      "improvement_code": "<div class=\"ant-col ant-form-item-label\">\n  <span class=\"ant-form-item-required-mark\">*</span>\n  <label for=\"boardListFilterForm_usrEmail\" class=\"ant-form-item-required\">이메일</label>\n</div>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 20,
+      "error_code_text": "<div class=\"ant-col ant-form-item-label\">\n  <span class=\"ant-form-item-required-mark\">*</span>\n  <label for=\"boardListFilterForm_usrEmail\" class=\"ant-form-item-required\"><span class=\"hidden\">필수입력</span> 이메일</label>\n</div>",
+      "source_text": "check_item: Q&A > 질문 및 답변 > 문의하기 | error_type: 2.5.3 (운동장소 이동) 포커스 이동 시키는 방법으로 화면의 변화가 있을 때에는 포커스가 이동하는 위치가 예측 가능해야 한다. | rationale: 필수입력값 앞에 별표가 시각적으로만 구분되고 있어 스크린 리더 사용자에게는 구분되지 않음 | fix_code: <div class=\"ant-col ant-form-item-label\">\n  <span class=\"ant-form-item-required-mark\">*</span>\n  <label for=\"boardListFilterForm_usrEmail\" class=\"ant-form-item-required\">이메일</label>\n</div> | error_code_text: <div class=\"ant-col ant-form-item-label\">\n  <span class=\"ant-form-item-required-mark\">*</span>\n  <label for=\"boardListFilterForm_usrEmail\" class=\"ant-form-item-required\"><span class=\"hidden\">필수입력</span> 이메일</label>\n</div>"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_021/img_000_35df4e19c59355a3.png",
+    "retrieved_result": {
+      "error_type": "3.3.2 ( 의미 변화 ) 텍스트 링크에 적절한 링크 텍스트를 제공하지 않음 .",
+      "check_item": "Q&A > 질문 및 답변 > 질문목록",
+      "improvement_text": "링크 텍스트는 링크 목적을 명확하게 전달해야 하며, 단순한 '여기' 또는 '더 보기'와 같은 표현은 피해야 함",
+      "improvement_code": ""
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 21,
+      "error_code_text": "■ 접근성 오류  심각도 오류",
+      "source_text": "check_item: Q&A > 질문 및 답변 > 질문목록 | error_type: 3.3.2 ( 의미 변화 ) 텍스트 링크에 적절한 링크 텍스트를 제공하지 않음 . | rationale: 링크 텍스트는 링크 목적을 명확하게 전달해야 하며, 단순한 '여기' 또는 '더 보기'와 같은 표현은 피해야 함 | fix_code:  | error_code_text: ■ 접근성 오류  심각도 오류"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_022/img_000_ce0eb8f20950a181.png",
+    "retrieved_result": {
+      "error_type": "1.3.1 (의미 순서) 적절한 대체 텍스트 제공하지 않음.",
+      "check_item": "훈련센터 / 고객지원 > 고객교육",
+      "improvement_text": "title 속성에 적절하지 않은 텍스트가 포함되어 있어 스크린 리더 사용자에게 혼란을 줄 수 있음\n적절한 대체 텍스트 제공으로 접근성 향상 필요",
+      "improvement_code": "<button title=\"다운로드\" type=\"button\" class=\"ant-btn ant-btn-circle ant-btn-icon-only\">\n  <i class=\"anticon anticon-download\">\n    ...\n  </i>\n</button>\n\n<button title=\"PDF/ETF 교육자료 다운로드\" type=\"button\" class=\"ant-btn ant-btn-circle ant-btn-icon-only\">\n  <i class=\"anticon anticon-download\">\n    ...\n  </i>\n</button>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 22,
+      "error_code_text": "-",
+      "source_text": "check_item: 훈련센터 / 고객지원 > 고객교육 | error_type: 1.3.1 (의미 순서) 적절한 대체 텍스트 제공하지 않음. | rationale: title 속성에 적절하지 않은 텍스트가 포함되어 있어 스크린 리더 사용자에게 혼란을 줄 수 있음\n적절한 대체 텍스트 제공으로 접근성 향상 필요 | fix_code: <button title=\"다운로드\" type=\"button\" class=\"ant-btn ant-btn-circle ant-btn-icon-only\">\n  <i class=\"anticon anticon-download\">\n    ...\n  </i>\n</button>\n\n<button title=\"PDF/ETF 교육자료 다운로드\" type=\"button\" class=\"ant-btn ant-btn-circle ant-btn-icon-only\">\n  <i class=\"anticon anticon-download\">\n    ...\n  </i>\n</button> | error_code_text: -"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_023/img_000_b1a9e1b0337d2c9a.png",
+    "retrieved_result": {
+      "error_type": "2.4.3 ( 링크 목적의 명확성 ) 링크 목적이 불분명한 경우에 대한 적절한 대체 텍스트 제공",
+      "check_item": "링크 텍스트 - title 속성",
+      "improvement_text": "링크 텍스트만으로는 링크의 목적을 알기 어려움\ntitle 속성에 링크 목적을 명확히 설명하는 텍스트를 포함해야 함",
+      "improvement_code": "<a href=\"/ko/api/download/static?fileNm=KSD_금융규제_개선.xlsx\" class=\"ant-btn down-btn m-full-size-btn\" title=\"금융규제 개선 다운로드\">\n  <span>다운로드</span>\n  <i class=\"anticon anticon-download\">....</i>\n</a>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 23,
+      "error_code_text": "-",
+      "source_text": "check_item: 링크 텍스트 - title 속성 | error_type: 2.4.3 ( 링크 목적의 명확성 ) 링크 목적이 불분명한 경우에 대한 적절한 대체 텍스트 제공 | rationale: 링크 텍스트만으로는 링크의 목적을 알기 어려움\ntitle 속성에 링크 목적을 명확히 설명하는 텍스트를 포함해야 함 | fix_code: <a href=\"/ko/api/download/static?fileNm=KSD_금융규제_개선.xlsx\" class=\"ant-btn down-btn m-full-size-btn\" title=\"금융규제 개선 다운로드\">\n  <span>다운로드</span>\n  <i class=\"anticon anticon-download\">....</i>\n</a> | error_code_text: -"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_025/img_000_6b54b0b18eef797d.png",
+    "retrieved_result": {
+      "error_type": "2.1.1 (키보드 접근 가능) 메뉴 선택시 포커스이동이 적절히 구현 안 된 사례임.",
+      "check_item": "탐색성 확보 - 메뉴 선택",
+      "improvement_text": "키보드 UI 및 보조기술 사용 시 메뉴 선택 후 포커스가 적절한 위치로 이동하지 않음",
+      "improvement_code": "<ul class=\"ant-menu item-3 text-center history-filter ant-menu-light ant-menu-root ant-menu-horizontal\">\n  ...\n  <li class=\"ant-menu-item ant-menu-item-selected\" role=\"button\" tabindex=\"0\" title=\"협력\">협력~2014</li>\n  ...\n</ul>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 25,
+      "error_code_text": "<ul class=\"ant-menu item-3 text-center history-filter ant-menu-light ant-menu-root ant-menu-horizontal\">\n  ...\n  <li class=\"ant-menu-item ant-menu-item-selected\">협력~2014</li>\n  ...\n</ul>",
+      "source_text": "check_item: 탐색성 확보 - 메뉴 선택 | error_type: 2.1.1 (키보드 접근 가능) 메뉴 선택시 포커스이동이 적절히 구현 안 된 사례임. | rationale: 키보드 UI 및 보조기술 사용 시 메뉴 선택 후 포커스가 적절한 위치로 이동하지 않음 | fix_code: <ul class=\"ant-menu item-3 text-center history-filter ant-menu-light ant-menu-root ant-menu-horizontal\">\n  ...\n  <li class=\"ant-menu-item ant-menu-item-selected\" role=\"button\" tabindex=\"0\" title=\"협력\">협력~2014</li>\n  ...\n</ul> | error_code_text: <ul class=\"ant-menu item-3 text-center history-filter ant-menu-light ant-menu-root ant-menu-horizontal\">\n  ...\n  <li class=\"ant-menu-item ant-menu-item-selected\">협력~2014</li>\n  ...\n</ul>"
+    }
+  },
+  {
+    "project_id": "demo_project",
+    "retrieved_image_path": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/rag_case_store/demo_project/preprocessed/past_diagnosis2/extracted_images/pptx/slide_026/img_000_6b54b0b18eef797d.png",
+    "retrieved_result": {
+      "error_type": "2.4.3 (포커스 순서 변경) 포커스 이동순서가 논리적 순서와 일치하지 않아 혼동을 초래함.",
+      "check_item": "탐색 메뉴 - 메뉴 항목",
+      "improvement_text": "포커스이동 순서가 논리적 순서와 일치하지 않아 사용자가 혼란을 겪을 수 있음\n포커스 이동시 메뉴의 각 항목이 올바른 순서로 이동하지 않음",
+      "improvement_code": "<ul class=\"ant-menu item-3 text-center history-filter ant-menu-light ant-menu-root ant-menu-horizontal\">\n  ...\n  <li class=\"ant-menu-item ant-menu-item-selected\" role=\"button\" tabindex=\"0\" title=\"협약\">협약~2014</li>\n  ...\n</ul>"
+    },
+    "source_meta": {
+      "source_file": "/content/drive/MyDrive/rag_system_bundle_real_fixed_v2/past_diagnosis_history/past_diagnosis2.pptx",
+      "page_index": 26,
+      "error_code_text": "-",
+      "source_text": "check_item: 탐색 메뉴 - 메뉴 항목 | error_type: 2.4.3 (포커스 순서 변경) 포커스 이동순서가 논리적 순서와 일치하지 않아 혼동을 초래함. | rationale: 포커스이동 순서가 논리적 순서와 일치하지 않아 사용자가 혼란을 겪을 수 있음\n포커스 이동시 메뉴의 각 항목이 올바른 순서로 이동하지 않음 | fix_code: <ul class=\"ant-menu item-3 text-center history-filter ant-menu-light ant-menu-root ant-menu-horizontal\">\n  ...\n  <li class=\"ant-menu-item ant-menu-item-selected\" role=\"button\" tabindex=\"0\" title=\"협약\">협약~2014</li>\n  ...\n</ul> | error_code_text: -"
+    }
+  }
+]
