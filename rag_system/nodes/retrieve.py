@@ -20,6 +20,20 @@ _clip_model = None
 _clip_device = None
 _text_model = None
 
+def _resolve_case_image_path(case_image_path: str, project_id: str) -> Path:
+    raw_path = Path(case_image_path)
+    if raw_path.exists():
+        return raw_path
+
+    marker = f"rag_case_store/{project_id}/"
+    normalized = case_image_path.replace("\\", "/")
+    if marker in normalized:
+        suffix = normalized.split(marker, 1)[1]
+        candidate = Path("./rag_case_store") / project_id / suffix
+        if candidate.exists():
+            return candidate
+
+    raise FileNotFoundError(f"Case image does not exist: {case_image_path}")
 
 def _get_clip_components():
     global _clip_processor, _clip_model, _clip_device
@@ -166,9 +180,7 @@ def load_project_vector_store(project_id: str) -> list[dict]:
         if not isinstance(image_embedding, list) or not isinstance(text_embedding, list):
             raise ValueError(f'Invalid vector_store row index={idx}: missing embeddings')
 
-        image_path = Path(case_image_path)
-        if not image_path.exists():
-            raise FileNotFoundError(f'Case image does not exist: {case_image_path}')
+        image_path = _resolve_case_image_path(case_image_path, project_id)
 
         rows.append(
             {
