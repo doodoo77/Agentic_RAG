@@ -1,0 +1,43 @@
+sequenceDiagram
+    autonumber
+
+    actor User
+    participant Streamlit
+    participant LangGraph
+    participant OpenAI
+    participant Memory as Long-term Memory
+    participant Store as RAG Vector Store
+
+    User->>Streamlit: 이미지 + 초기 진단 입력
+    Streamlit->>LangGraph: 실행 요청
+
+    LangGraph->>OpenAI: 초기 진단 생성
+    OpenAI-->>LangGraph: initial diagnosis
+
+    LangGraph->>Memory: 유사 memory 검색
+    Memory-->>LangGraph: memory candidates
+
+    alt early exit hit
+        LangGraph-->>Streamlit: memory 기반 결과 반환
+    else no hit
+        LangGraph->>Store: 유사 case 검색
+        Store-->>LangGraph: retrieval candidates
+        LangGraph->>OpenAI: 후보 grading
+        OpenAI-->>LangGraph: relevant / not relevant
+
+        loop 필요 시
+            LangGraph->>OpenAI: query rewrite
+            OpenAI-->>LangGraph: rewritten query
+            LangGraph->>Store: 재검색
+            Store-->>LangGraph: 새 후보
+        end
+
+        LangGraph-->>Streamlit: 최종 결과 반환
+    end
+
+    Streamlit-->>User: 결과 표시
+
+    opt 전문가 피드백
+        User->>Streamlit: 승인/반려
+        Streamlit->>Memory: feedback 저장
+    end
