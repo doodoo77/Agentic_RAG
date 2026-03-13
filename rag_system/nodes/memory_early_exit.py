@@ -205,3 +205,4 @@ def run_memory_retrieval_early_exit(
         "selected_similarity": selected["similarity"],
         "diagnosis_result": selected["memory_event"]["retrieved_result"],
     }, memory_items
+
