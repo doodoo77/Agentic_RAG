@@ -65,29 +65,30 @@ class InitialDiagnosisResult(TypedDict):
     improvement_code: str
 
 
-class MemoryEvent(TypedDict):
-    project_id: str
-    query_image_path: str
-    retrieved_image_path: str
-    retrieved_result: RetrievedResult
-    feedback: FeedbackType
+class DiagnosisRecord(TypedDict):
+    error_type: str
+    check_item: str
+    improvement_text: str
+    improvement_code: str
+    image_path: str
 
 
-class Mem0SearchItem(TypedDict):
-    memory_event: MemoryEvent
-    mem0_score: Optional[float]
+class LongTermMemoryValue(TypedDict):
+    current_diagnosis: DiagnosisRecord
+    referenced_diagnosis: DiagnosisRecord
 
 
-class EarlyExitCandidate(TypedDict):
-    memory_event: MemoryEvent
-    similarity: float
-    mem0_score: Optional[float]
+class LongTermMemorySearchItem(TypedDict):
+    memory_key: str
+    memory_value: LongTermMemoryValue
+    text_similarity: float
+    image_similarity: float
     final_score: float
 
 
 class EarlyExitResult(TypedDict):
     early_exit_triggered: bool
-    selected_memory: Optional[MemoryEvent]
+    selected_memory: Optional[LongTermMemorySearchItem]
     selected_similarity: Optional[float]
     diagnosis_result: Optional[RetrievedResult]
 
@@ -129,7 +130,9 @@ class RewriteResult(TypedDict):
 
 class MemorySaveResult(TypedDict):
     memory_saved: bool
-    memory_event: MemoryEvent
+    namespace: Tuple[str, str]
+    memory_key: Optional[str]
+    memory_value: Optional[LongTermMemoryValue]
 
 
 class PipelineState(TypedDict, total=False):
@@ -153,29 +156,29 @@ class PipelineState(TypedDict, total=False):
     initial_diagnosis_result: InitialDiagnosisResult
     initial_diagnosis_pair_valid: bool
 
-    # step 3 / 8 memory event payload
+    # memory payload
     retrieved_image_path: Optional[str]
     retrieved_result: Optional[RetrievedResult]
-    memory_event: Optional[MemoryEvent]
+    memory_record: Optional[MemorySaveResult]
     memory_saved: Optional[bool]
 
-    # step 4
-    memory_candidates: List[Mem0SearchItem]
+    # memory early exit
+    memory_candidates: List[LongTermMemorySearchItem]
     early_exit_threshold: float
     early_exit_result: EarlyExitResult
     early_exit_triggered: bool
-    selected_memory: Optional[MemoryEvent]
+    selected_memory: Optional[LongTermMemorySearchItem]
     selected_similarity: Optional[float]
     diagnosis_result: Optional[RetrievedResult]
 
-    # step 5
+    # retrieval
     top_k: int
     retrieval_candidates: List[RetrievalCandidate]
     retrieval_query_text: str
     retrieval_mode: str
     rewritten_query: Optional[str]
 
-    # step 6
+    # grader
     graded_candidates: List[GradedCandidate]
     has_relevant_candidate: bool
     selected_candidate: Optional[RetrievalCandidate]

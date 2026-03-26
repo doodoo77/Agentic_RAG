@@ -65,8 +65,14 @@ def make_graph(llm_diagnosis: Any, llm_grader: Any, llm_rewriter: Any, memory_cl
             'diagnosis_result': early_exit_result['diagnosis_result'],
         }
         if early_exit_result['early_exit_triggered'] and early_exit_result['selected_memory']:
-            out['retrieved_image_path'] = early_exit_result['selected_memory']['retrieved_image_path']
-            out['retrieved_result'] = early_exit_result['selected_memory']['retrieved_result']
+            referenced = early_exit_result['selected_memory']['memory_value']['referenced_diagnosis']
+            out['retrieved_image_path'] = referenced['image_path']
+            out['retrieved_result'] = {
+                'error_type': referenced['error_type'],
+                'check_item': referenced['check_item'],
+                'improvement_text': referenced['improvement_text'],
+                'improvement_code': referenced['improvement_code'],
+            }
         return out
 
     def retrieve_node(state: PipelineState) -> PipelineState:
@@ -136,20 +142,21 @@ def make_graph(llm_diagnosis: Any, llm_grader: Any, llm_rewriter: Any, memory_cl
         retrieved_image_path = state.get('retrieved_image_path')
         retrieved_result = state.get('retrieved_result') or state.get('diagnosis_result')
         if not feedback or not retrieved_image_path or not retrieved_result:
-            return {**state, 'memory_saved': False, 'memory_event': None}
+            return {**state, 'memory_saved': False, 'memory_record': None}
 
         save_result = save_long_term_memory(
             memory_client=memory_client,
             project_id=state['normalized_input']['project_id'],
-            query_image_path=state['normalized_input']['image_path'],
-            retrieved_image_path=retrieved_image_path,
-            retrieved_result=retrieved_result,
+            current_diagnosis_result=state['initial_diagnosis_result'],
+            current_image_path=state['normalized_input']['image_path'],
+            referenced_diagnosis_result=retrieved_result,
+            referenced_image_path=retrieved_image_path,
             feedback=feedback,
         )
         return {
             **state,
             'memory_saved': save_result['memory_saved'],
-            'memory_event': save_result['memory_event'],
+            'memory_record': save_result,
         }
 
     def route_after_early_exit(state: PipelineState) -> str:
@@ -190,4 +197,4 @@ def make_graph(llm_diagnosis: Any, llm_grader: Any, llm_rewriter: Any, memory_cl
     graph_builder.add_edge('finalize', 'feedback')
     graph_builder.add_edge('feedback', END)
 
-    return graph_builder.compile()
+    return graph_builder.compile(store=memory_client.store)

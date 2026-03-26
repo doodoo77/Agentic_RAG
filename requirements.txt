@@ -1,6 +1,7 @@
 openai
-mem0ai
 langgraph
+langgraph-checkpoint-postgres
+psycopg[binary,pool]
 langchain-core
 transformers
 sentence-transformers

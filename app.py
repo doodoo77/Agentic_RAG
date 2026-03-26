@@ -7,7 +7,7 @@ from typing import Any
 
 import pandas as pd
 import streamlit as st
-from mem0 import Memory
+from rag_system.memory import LangGraphPostgresMemoryClient
 
 from rag_system.clients.openai_responses import OpenAIResponsesJSONClient
 from rag_system.graph.build_graph import make_graph
@@ -76,18 +76,20 @@ def _render_memory_early_exit(node_state: dict):
     early_exit_result = node_state.get("early_exit_result") or {}
     memory_candidates = node_state.get("memory_candidates") or []
 
-    top_mem0 = []
+    top_memory = []
     for idx, item in enumerate(memory_candidates[:3], start=1):
-        event = item.get("memory_event") or {}
-        retrieved = event.get("retrieved_result") or {}
-        top_mem0.append(
+        memory_value = item.get("memory_value") or {}
+        referenced = memory_value.get("referenced_diagnosis") or {}
+        top_memory.append(
             {
                 "rank": idx,
-                "mem0_score": item.get("mem0_score"),
-                "feedback": event.get("feedback"),
-                "retrieved_image_path": event.get("retrieved_image_path"),
-                "check_item": retrieved.get("check_item"),
-                "error_type": retrieved.get("error_type"),
+                "memory_key": item.get("memory_key"),
+                "final_score": item.get("final_score"),
+                "text_similarity": item.get("text_similarity"),
+                "image_similarity": item.get("image_similarity"),
+                "referenced_image_path": referenced.get("image_path"),
+                "check_item": referenced.get("check_item"),
+                "error_type": referenced.get("error_type"),
             }
         )
 
@@ -103,16 +105,16 @@ def _render_memory_early_exit(node_state: dict):
     )
     st.dataframe(summary_df, use_container_width=True)
 
-    if top_mem0:
+    if top_memory:
         st.markdown("**top memory candidates**")
-        st.dataframe(pd.DataFrame(top_mem0), use_container_width=True)
+        st.dataframe(pd.DataFrame(top_memory), use_container_width=True)
 
     selected_memory = early_exit_result.get("selected_memory")
     if selected_memory:
         with st.expander("selected memory detail", expanded=True):
             left, right = st.columns([1, 1.2])
             with left:
-                mem_img = selected_memory.get("retrieved_image_path")
+                mem_img = ((selected_memory.get("memory_value") or {}).get("referenced_diagnosis") or {}).get("image_path")
                 if mem_img and Path(mem_img).exists():
                     st.image(mem_img, caption="selected memory image", use_container_width=True)
             with right:
@@ -254,9 +256,9 @@ def _render_finalize(node_state: dict):
 def _render_feedback_trace(node_state: dict):
     st.subheader("7. Feedback")
     if node_state.get("memory_saved"):
-        st.success("mem0 저장 완료")
+        st.success("Long-term memory 저장 완료")
     else:
-        st.info("아직 전문가 피드백이 입력되지 않아 mem0 저장 안 됨")
+        st.info("아직 전문가 피드백이 입력되지 않아 Long-term memory 저장 안 됨")
 
     df = pd.DataFrame(
         [
@@ -270,11 +272,11 @@ def _render_feedback_trace(node_state: dict):
 
 
 @st.cache_resource(show_spinner=False)
-def _build_runtime(diagnosis_model: str, grader_model: str, rewriter_model: str):
+def _build_runtime(diagnosis_model: str, grader_model: str, rewriter_model: str, memory_db_uri: str, setup_memory_store: bool):
     llm_diagnosis = OpenAIResponsesJSONClient(model=diagnosis_model)
     llm_grader = OpenAIResponsesJSONClient(model=grader_model)
     llm_rewriter = OpenAIResponsesJSONClient(model=rewriter_model)
-    memory_client = Memory()
+    memory_client = LangGraphPostgresMemoryClient(memory_db_uri, setup_store=setup_memory_store)
 
     app = make_graph(
         llm_diagnosis=llm_diagnosis,
@@ -285,7 +287,7 @@ def _build_runtime(diagnosis_model: str, grader_model: str, rewriter_model: str)
     return app, memory_client
 
 
-def _render_expert_feedback(final_state: dict, memory_client: Any):
+def _render_expert_feedback(final_state: dict, memory_client: LangGraphPostgresMemoryClient):
     st.markdown("---")
     st.subheader("전문가 피드백 저장")
 
@@ -320,21 +322,25 @@ def _render_expert_feedback(final_state: dict, memory_client: Any):
             save_result = save_long_term_memory(
                 memory_client=memory_client,
                 project_id=normalized_input["project_id"],
-                query_image_path=normalized_input["image_path"],
-                retrieved_image_path=retrieved_image_path,
-                retrieved_result=diagnosis_result,
+                current_diagnosis_result=final_state["initial_diagnosis_result"],
+                current_image_path=normalized_input["image_path"],
+                referenced_diagnosis_result=diagnosis_result,
+                referenced_image_path=retrieved_image_path,
                 feedback=feedback_value,
             )
 
-            st.success("mem0 저장 완료")
+            if save_result.get("memory_saved"):
+                st.success("Long-term memory 저장 완료")
+            else:
+                st.info("thumbs_up가 아니므로 Long-term memory에는 저장하지 않았습니다.")
 
             if comment.strip():
                 st.info(f"전문가 코멘트: {comment.strip()}")
 
-            with st.expander("저장된 memory_event", expanded=True):
+            with st.expander("저장된 long_term_memory", expanded=True):
                 _safe_json(save_result)
         except Exception as e:
-            st.error(f"mem0 저장 실패: {e}")
+            st.error(f"Long-term memory 저장 실패: {e}")
 
 
 def main():
@@ -347,7 +353,9 @@ def main():
         allowed_pairs_xlsx_path = st.text_input("allowed_pairs_xlsx_path", value="./golden_text.xlsx")
         allowed_pairs_sheet_name = st.text_input("allowed_pairs_sheet_name", value="Sheet1")
         top_k = st.number_input("top_k", min_value=1, max_value=20, value=5, step=1)
-        early_exit_threshold = st.number_input("early_exit_threshold", value=0.85, step=0.01, format="%.2f")
+        early_exit_threshold = st.number_input("early_exit_threshold", value=0.90, step=0.01, format="%.2f")
+        memory_db_uri = st.text_input("memory_db_uri", value="postgresql://postgres:postgres@localhost:5442/postgres?sslmode=disable")
+        setup_memory_store = st.checkbox("setup_memory_store", value=False)
         max_rewrite_count = st.number_input("max_rewrite_count", min_value=0, max_value=10, value=2, step=1)
         diagnosis_model = st.text_input("diagnosis_model", value="gpt-4.1")
         grader_model = st.text_input("grader_model", value="gpt-4.1")
@@ -395,6 +403,8 @@ def main():
             diagnosis_model=diagnosis_model,
             grader_model=grader_model,
             rewriter_model=rewriter_model,
+            memory_db_uri=memory_db_uri,
+            setup_memory_store=setup_memory_store,
         )
     except Exception as e:
         st.error(f"그래프 준비 실패: {e}")
